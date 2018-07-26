@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
 import os
 import sys
@@ -55,7 +55,7 @@ def getEFIList():
 
 
 def mounter(identifier):
-    os.system("diskutil mount " + identifier)
+    os.system("sudo diskutil mount " + identifier)
 
 
 def showEFI(efiList):
